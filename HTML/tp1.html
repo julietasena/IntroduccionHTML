@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Práctico HTML </title>
+</head>
+<body>
+    <header>
+        <h1>Práctico HTML - Desarrollo de Software</h1>
+        <p> Este documento HTML tiene una estructura básica</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#encabezados">Encabezados y Propiedades del Texto</a></li>
+            <li><a href="#divisiones">Divisiones y Agrupaciones de Contenido</a></li>
+            <li><a href="#enlaces">Enlaces y Listas</a></li>
+            <li><a href="#multimedia">Elementos Multimedia</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#formularios">Formularios</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="encabezados">
+            <h2 >Encabezados y Propiedades del Texto</h2>
+            <h1 style="text-decoration: underline;">Encabezado de Nivel 1</h1>
+            <h2 style="font-style: italic;">Encabezado de Nivel 2</h2>
+            <h3 style="text-transform: uppercase;">Encabezado de Nivel 3</h3>
+            <h4 style="background-color: rgb(245, 245, 125);">Encabezado de Nivel 4</h4>
+            <h5 style= "color: rgb(120, 7, 78); ">Encabezado de Nivel 5</h5>
+            <h6 style="text-align: center;">Encabezado de Nivel 6</h6>
+            <p>Texto normal con <strong>negrita</strong>, <em>cursiva</em> y <u>subrayado</u>.</p>
+        </section>
+
+        <section id="divisiones">
+            <h2>Divisiones y Agrupación de Contenido</h2>
+            <div>
+                <h3>Sección 1</h3>
+                <p>Este es el contenido de la primera sección.</p>
+            </div>
+            <div>
+                <h3>Sección 2</h3>
+                <p>Este es el contenido de la segunda sección.</p>
+            </div>
+        </section>
+
+        <section id="enlaces">
+            <h2>Enlaces y Listas</h2>
+            <p>Enlace externo: <a href="https://www.youtube.com/" target="_blank">Visita youtube</a></p>
+            <p>Enlaces internos: 
+                <a href="#encabezados">Ir a Encabezados</a>, 
+                <a href="#multimedia">Ir a Multimedia</a>
+            </p>
+            <h3>Lista Ordenada</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+            <h3>Lista Desordenada</h3>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ul>
+        </section>
+
+        <section id="multimedia">
+            <h2>Elementos Multimedia</h2>
+            <img src="imagen.jpeg" alt="Imagen de ejemplo" width="300" height="200">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/zFeUvW7WlBA" title="Jazz Hiphop - Lo-fi Rain ☂️ &quot;Life begins after coffee.&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+             
+            </audio>
+        </section>
+
+        <section id="tablas">
+            <h2>Tablas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Encabezado 1</th>
+                        <th>Encabezado 2</th>
+                        <th>Encabezado 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fila 1, Celda 1</td>
+                        <td>Fila 1, Celda 2</td>
+                        <td>Fila 1, Celda 3</td>
+                    </tr>
+                    <tr>
+                        <td>Fila 2, Celda 1</td>
+                        <td>Fila 2, Celda 2</td>
+                        <td>Fila 2, Celda 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="formularios">
+            <h2>Formularios</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2024 Práctico HTML - Programación 3</p>
+    </footer>
+</body>
+</html>
